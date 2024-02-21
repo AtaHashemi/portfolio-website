@@ -12,24 +12,17 @@
 
 .bg-image {
     background-image: url('img/image\ \(10\).png');
-    
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
+    color: #FFF
 }
 
-.container1 {
-    margin-left: 200px;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    color: #FFF;
-}
-
-
-/* @media (max-width: 647px) {
+@media (max-width: 576px) {
     .bg-image {
-    
+      transition: 500ms;
+      background-image: none;
+      background-color: #000;
     }
-} */
+  }
