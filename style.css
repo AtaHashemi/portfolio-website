@@ -10,7 +10,27 @@
     margin-left: 20px;
 }
 
-.bg-image {
+.logo{
+    width: 150px;
+    cursor: pointer;
+    animation: movedown 1s linear;
+    animation-delay: 0.6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+.container1 {
     background-image: url('img/image\ \(10\).png');
     background-size: cover;
     background-position: center center;
@@ -19,6 +39,9 @@
     color: #FFF
 }
 
+.container2{
+    height: 50vh;
+}
 @media (max-width: 576px) {
     .bg-image {
       transition: 500ms;
