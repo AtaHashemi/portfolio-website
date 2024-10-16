@@ -16,7 +16,7 @@ function ShowText() {
         }
     }
 
-    //rmeoving the first job title 
+    //removing the first job title 
     function removeLetters1() {
         job.textContent = "I am a " + JobTitle1.slice(0, i);
         i--;
@@ -53,18 +53,6 @@ function ShowText() {
     }
     addLetters1();
 }
-
-var video = document.getElementById('background-video');
-
-// Listen for scroll events
-window.addEventListener('scroll', function() {
-  // Calculate the scroll progress as a value between 0 and 1
-  var scroll = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-  var scrollProgress = scroll * 0.5 ;
-  // Set the video playback position based on the scroll progress
-  video.currentTime = scrollProgress * 10;
-  
-});
 
 window.onload = function() {
     ShowText();
